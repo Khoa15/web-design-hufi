@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.2</title>
+    <style>
+        *{padding:0; margin: 0}
+        img{
+            width: 100%;
+            border: 2px solid #000;
+        }
+        .rectangle{
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            background-image: url("../../imgs/bg.jpg");
+            background-repeat: no-repeat;
+            background-size: 70% 70%;
+            background-position: center;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .box{
+            color:red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .br-left-bottom{
+            border: 2px solid red;
+            border-right: unset;
+            border-top: unset;
+        }
+        .br-right-bottom{
+            border: 2px solid red;
+            border-left: unset;
+            border-top: unset;
+        }
+        .br-right-top{
+            border: 2px solid red;
+            border-left: unset;
+            border-bottom: unset;
+        }
+        .br-left-top{
+            border: 2px solid red;
+            border-right: unset;
+            border-bottom: unset;
+        }
+
+
+        .box a{
+            padding: 12px;
+            background-color: white;
+            border: 2px solid #000;
+        }
+        .box a span{
+            padding: 10px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="rectangle">
+        <div class="box br-right-bottom">
+            <a href="toan.html">
+                <span>TOAN.html</span>
+            </a>
+        </div>
+        <div class="box br-left-bottom">
+            <a href="ly.html">
+                <span>ly.html</span>
+            </a>
+        </div>
+        <div class="box br-right-top">
+            <a href="hoa.html">
+                <span>HOA.html</span>
+            </a>
+        </div>
+        <div class="box br-left-top">
+            <a href="av.html">
+                <span>AV.html</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

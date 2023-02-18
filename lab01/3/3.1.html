@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.1</title>
+    <style>
+        .br{
+            border: 2px solid #000;
+            margin-bottom: 10px;
+            padding: 10px 30px;
+        }
+
+        .br.line-red{
+            border-color: red;
+        }
+
+        .br.bg-green{
+            border-color:aquamarine;
+            background-color:rgba(180, 241, 221, 0.616);
+        }
+
+        .br.bg-blue{
+            background-color:rgba(180, 241, 221, 0.616);
+            border-color: rgb(68, 65, 233);
+        }
+        .container{
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="">
+            <p>Ordered lists can be very simple</p>
+            <ol class="br line-red">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </div>
+        <div class="">
+            <p>Ordered lists can have a variety of types.</p>
+            <ul class="br bg-green">
+                <li style="list-style: lower-alpha;">Lowercase letters</li>
+                <li style="list-style: upper-alpha;">Uppercase letters</li>
+                <li style="list-style: lower-roman;">Lowercase Roman numerals</li>
+                <li style="list-style: upper-roman;">Uppercase Roman numerals</li>
+                <li style="list-style: decimal;">Arabic numerals</li>
+            </ul>
+        </div>
+        <div>
+            <p>Ordered lists can be start at different values and width different types.</p>
+            <ol class="br bg-blue" type="a">
+                <li value="10">This should be j</li>
+                <li value="3">This should be c
+                    <ol>
+                        <li>
+                            Lists can next
+                            <ol>
+                                <li>Nesting depth is unlimited</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+
+            </ol>
+        </div>
+
+    </div>
+</body>
+</html>
