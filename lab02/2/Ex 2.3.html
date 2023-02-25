@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 2.3</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --bd-o-violet: #4c0bce;
+
+        }
+        .container{
+            width: 700px;
+            margin: auto;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-8{
+            width: 80%;
+            flex: 0 0 auto;
+        }
+        .col-2{
+            width: 20%;
+            flex: 0 0 auto;
+        }
+        .col-5{
+            width: 50%;
+            flex: 0 0 auto;
+        }
+        .bg-red{
+            background-color: rgb(255, 65, 65);
+        }
+        .bg-red-light{
+            background-color: rgb(255, 157, 157);
+        }
+        .text-right{
+            text-align: right;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .section{
+            display: block;
+            padding: 10px;
+        }
+        .text-lg{
+            font-size: 18pt;
+        }
+        .text-sm{
+            font-size: 14pt;
+        }
+        .br-red{
+            border: 1px solid red;
+        }
+        .mr-bottom{
+            margin-bottom: 10px;
+        }
+        .pd-5{
+            padding: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container br-red">
+        <div class="header">
+            <div class="row">
+                <div class="col-8">
+                    <div class="section mr-bottom text-sm bg-red text-right">
+                        Cong nghe dau goi duong toc
+                    </div>
+                    <div class="section br-red text-lg bg-red-light text-center">DOUBLE RICH</div>
+                </div>
+                <div class="col-2 br-red">
+                    <div class="">
+                        <img src="../../imgs/bg.jpg" height="100%" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="row">
+                <div class="col-5 br-red">
+                    <div class="pd-5">
+                        <ul type="square">
+                            <li>
+                                <h3>
+                                    San pham khuyen mai.
+                                </h3>
+                                <ul>
+                                    <li>Dau goi....</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>
+                                    Doi tuong tham gia
+                                </h3>
+                                <ul>
+                                    <li>Ap dung cho...</li>
+                                    <li>Chuong trinh khong ap dung cho...</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-5 br-red">
+                    <div class="pd-5">
+                        <ul type="square">
+                            <li>
+                                <h3>
+                                    Cach thuc nhan giai.
+                                </h3>
+                                <ol>
+                                    <li>Giai khuyen khich:...</li>
+                                    <li>Giai dac biet, nhat nhi:...</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

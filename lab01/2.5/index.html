@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.5</title>
+    <style>
+        .main-media{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .list-images{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item{
+            display: flex;
+            margin: 0 2px;
+            position: relative;
+            cursor: pointer;
+        }
+        .item.active img{
+            border: 2px solid red;
+        }
+        .triangle{
+            position: absolute;
+            top: -5px;
+            z-index: -1;
+            right: 40%;
+            left: 40%;
+            margin: auto;
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-bottom: 8px solid red;
+        }
+        .product{
+            width: 500px;
+            margin: auto;
+            box-shadow: 0px 0px 5px 1px #ccc;
+            padding: 20px;
+        }
+        .underline{
+            border-bottom: 2px solid red;
+            border-bottom-style: dashed;
+        }
+        strong{
+            color: red;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li::before{
+            color: red;
+            content: '\2022';
+            margin-left: -0.5px;
+            width: 1em;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <div class="media">
+            <div class="main-media">
+                <img src="../../imgs/bg.jpg" height="200px" alt="">
+            </div>
+            <div class="list-images">
+                <div class="item active">
+                    <div class="triangle"></div>
+                    <img src="../../imgs/bg.jpg" width="50px" alt="">
+                </div>
+                <div class="item">
+                    <img src="../../imgs/bg.jpg" width="50px" alt="">
+                </div>
+                <div class="item">
+                    <img src="../../imgs/bg.jpg" width="50px" alt="">
+                </div>
+                <div class="item">
+                    <img src="../../imgs/bg.jpg" width="50px" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="descript">
+            <p>Đặc điểm nổi bật</p>
+            <ul>
+                <li>Công nghệ Inverter vận hành êm, bền và tiết kiệm điện</li>
+                <li><strong class="underline">Công nghệ Ultra Mix</strong> giúp giữ quần áo bền như mới</li>
+                <li>Công nghệ Vapour Care dệt vi khuẩn và tác nhân gây dị ứng.</li>
+                <li>Chuương trình giặt Vapour Refresh làm mới, giảm nhăn quần áo.</li>
+                <li>Công nghệ AutoSense giảm sớn rách, hao nhờn, bảo vệ quần áo.</li>
+                <li>Máy giặt có chương trình giặt an toàn cho trang phục len.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

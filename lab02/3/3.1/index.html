@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.1 - Homework</title>
+    <style>
+        *{margin: 0;padding:0}
+
+        .container{
+            width: 1080px;
+            margin: auto
+        }
+
+        .list-grid{
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0,1fr));
+        }
+
+        .list-grid > .item{
+            display: block;
+            border: 1px solid #ccc;
+        }
+        
+        .box{
+            display: block;
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        .box-media{
+            position: relative;
+            display: block;
+            height: 250px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .box-media > img{
+            max-width: 100%;
+            border: 0;
+        }
+
+        .badge{
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: #ccc;
+        }
+
+        .box-media > .badge{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .box-media > .badge-sale{
+            background: linear-gradient(to right,#ef3006,#c60004);
+            border-radius: 2cm;
+            padding-right: 10px;
+        }
+
+
+        .box-media > .badge-sale::before{
+            content: '🗲';
+            background-color: #f0944a;
+            border-radius: 100%;
+            transform: rotate(-15deg);
+            font-weight: bold;
+            margin-right: 5px;
+            color: #fff;
+            font-size: 10px;
+            padding: 3px;
+        }
+
+        .box-media > .badge-sale-buy{
+            background-color: #c58618;
+            padding: 0px 5px;
+            color: #fff;
+        }
+
+        .box-body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .box-body .p-price{
+            color: red;
+            font-weight: bold;
+        }
+
+        .text-underline{
+            text-decoration: underline;
+        }
+
+        .p-star{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .rating-total{
+            font-size: 12px;
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        .icon{
+            font-style: unset;
+        }
+
+        .icon-star::after{
+            content: '\2605';/*⭐*/
+            color: #c58618;
+        }
+
+        .icon-star-dark::after{
+            content: '\2605';/*⭐*/
+            color: #a5a5a5;
+        }
+        
+        .p-info{
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .pointer{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="list-grid">
+            <div class="item">
+                <div class="box pointer">
+                    <div class="box-media">
+                        <img src="../../img/bg.jpeg" alt="">
+                        <span class="badge badge-sale">Giảm giá xxx,xxx,xxx <sup class="text-underline">đ</sup></span>
+                    </div>
+                    <div class="box-body">
+                        <div class="p-title">
+                            iPad Pro M1 11 inch WiFi Cellular 2TB (2021)
+                        </div>
+                        <div class="p-price">
+                            50.990.000 <sup class="text-underline">đ</sup>
+                        </div>
+                        <div class="p-star">
+                            <p>
+                                <i class="icon icon-star"></i>
+                                <i class="icon icon-star"></i>
+                                <i class="icon icon-star"></i>
+                                <i class="icon icon-star"></i>
+                                <i class="icon icon-star-dark"></i>
+                            </p>
+                            <p class="rating-total">5 đánh giá</p>
+                        </div>
+                        <div class="p-info">
+                            <ul>
+                                <li>Chip Apple M1</li>
+                                <li>RAM 16 GB</li>
+                                <li>Dung lượng 2 TB</li>
+                                <li>5G, Nghe gọi qua FaceTime</li>
+                                <li>Pin 28.65 Wh (~ 7538 mAh),  Sạc 20 W</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box pointer">
+                    <div class="box-media">
+                        <img src="../../img/bg.jpeg" alt="">
+                        <span class="badge badge-sale-buy">Trả góp 0%</span>
+                    </div>
+                    <div class="box-body">
+                        <div class="p-title">
+                            iPad Pro M1 11 inch WiFi Cellular 2TB (2021)
+                        </div>
+                        <div class="p-price">
+                            50.990.000 <sup class="text-underline">đ</sup>
+                        </div>
+                        <div class="p-star">
+                            <p>
+                                <i class="icon icon-star"></i>
+                                <i class="icon icon-star"></i>
+                                <i class="icon icon-star"></i>
+                                <i class="icon icon-star"></i>
+                                <i class="icon icon-star-dark"></i>
+                            </p>
+                        </div>
+                        <div class="p-info">
+                            <ul>
+                                <li>Chip Apple M1</li>
+                                <li>RAM 16 GB</li>
+                                <li>Dung lượng 2 TB</li>
+                                <li>5G, Nghe gọi qua FaceTime</li>
+                                <li>Pin 28.65 Wh (~ 7538 mAh),  Sạc 20 W</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box pointer">
+                    <div class="box-media">
+                        <img src="../../img/bg.jpeg" alt="">
+                        <span class="badge badge-sale-buy"></span>
+                    </div>
+                    <div class="box-body">
+                        <div class="p-title">
+                            iPad Pro M1 11 inch WiFi Cellular 2TB (2021)
+                        </div>
+                        <div class="p-price">
+                            50.990.000 <sup class="text-underline">đ</sup>
+                        </div>
+                        <div class="p-star">
+                            <p>
+                                <i class="icon icon-star"></i>
+                                <i class="icon icon-star"></i>
+                                <i class="icon icon-star"></i>
+                                <i class="icon icon-star"></i>
+                                <i class="icon icon-star-dark"></i>
+                            </p>
+                        </div>
+                        <div class="p-info">
+                            <ul>
+                                <li>Chip Apple M1</li>
+                                <li>RAM 16 GB</li>
+                                <li>Dung lượng 2 TB</li>
+                                <li>5G, Nghe gọi qua FaceTime</li>
+                                <li>Pin 28.65 Wh (~ 7538 mAh),  Sạc 20 W</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
