@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.container{
+    width: 1050px;
+    margin: auto;
+}
+.container-fluid{
+    width: 100%
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-10,.col-2,.col-3,.col-7,.col-8{
+    /* flex: 25%; */
+    min-height: 100px;
+    border: 1px solid rgba(112.520718,44.062154,249.437846, 0.3)
+}
+.col-8{
+    width: 80%;
+    flex: 80%;
+}
+.col-2{
+    width: 20%;
+    flex: 20%;
+}
+.col-3{
+    width: 33.33333%;
+    flex: 33.3333%;
+}
+.col-7{
+    width: 66.66666%;
+    flex: 66.6666%;
+}
+.col-10{
+    width: 100%;
+    flex: 100%;
+}
+.box{
+    width: 100%;
+    background-color: rgb(112.520718,44.062154,249.437846, 0.15);
+    border: 1px solid rgba(112.520718,44.062154,249.437846, 0.3)
+}
+
+/* Navbar */
+.navbar{
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    background-color: rgb(195, 255, 255);
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.menu{
+    background-color: yellow;
+    list-style: none;
+    border: 1px solid red;
+}
+.menu li::before{
+    content: "♠";
+    margin-right: 5px;
+}
+.menu li{
+    padding-left: 5px;
+    margin-left: 10px;
+    background-color: rgb(119, 119, 245);
+    border-bottom: 1px solid #fff;
+}
+
+/* End Navbar */
+
+/* form */
+form{
+    display: inline-block;
+    padding: 5px 3px;
+}
+form, input, select{
+    width: 100%;
+    margin-bottom: 5px;
+}
+input, select{
+    padding: 5px 0;
+}
+
+input[type="button"]{
+    width: unset;
+    float: right;
+    padding: 2px 7px;
+}
+
+/* End Form */
+
+/* Text */
+.text-center{
+    text-align: center;
+}
+
+.text-upper{
+    text-transform: uppercase;
+}
+
+.text-light{
+    color: #fff;
+}
+
+.text-danger{
+    color: rgb(250, 68, 68);
+}
+/* End Text */
+
+.color-warning{
+    color:yellow;
+}
+
+.bg-dark{
+    background-color: slategray;
+}
+
+.bg-light{
+    background-color: rgb(216, 216, 216);
+}
+
+/* Product */
+
+.product{
+    width: 100%;
+    color: blue;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-media{
+    padding: 50px;
+}
+
+/* End Product */
+
+/* Other */
+h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+img{
+    width: 100%;
+}
+
+.mt-3{
+    margin: 5px;
+}
+
+.badge{
+    background-color: red;
+    border-radius: 50%;
+    padding: 2px;
+}

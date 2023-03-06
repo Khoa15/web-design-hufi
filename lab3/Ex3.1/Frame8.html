@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame 7</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <h3 class="text-center">Content on this page bla bla bla bla</h3>
+            </div>
+            <div class="col-10">
+                <ul class="navbar">
+                    <li>Trang chủ</li>
+                    <li>Giao Diện</li>
+                    <li>Sản phẩm</li>
+                    <li>Liên Hệ</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 bg-dark">
+                <p class="text-center mt-3">
+                    <span class="bg-light" id="timer"></span>
+                </p>
+                <h3 class="text-center text-upper color-warning">Tìm kiếm sản phẩm</h3>
+                <form>
+                    <input type="text" placeholder="Tên sản phẩm cần tìm">
+                    <select name="" id="">
+                        <option>Từ giá...</option>
+                    </select>
+                    <select name="" id="">
+                        <option>Đến giá...</option>
+                    </select>
+                    <input type="button" value="Tìm kiếm">
+                </form>
+                <h3 class="text-center text-upper color-warning">Menu Sản Phẩm</h3>
+                <ul class="menu">
+                    <li>Máy tính bảng >></li>
+                    <li>Máy tính bảng xách tay>></li>
+                    <li>CPU - Bộ vi xử lý</li>
+                    <li>HĐ-Ổ đĩa cứng</li>
+                    <li>VGA Card-Card đồ họa</li>
+                    <li>Mouse-Chuột máy tính</li>
+                    <li>Keyboard-Bàn phím</li>
+                    <li>Phụ kiện Laptop</li>
+                </ul>
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="product">
+                            <div class="product-title">
+                                <span class="badge text-light">new</span>
+                                Samsung Galaxy Z Fold 5G
+                            </div>
+                            <div class="product-media">
+                                <img src="./img.jpg" alt="">
+                            </div>
+                            <div class="product-descript">
+                                <div class="price">
+                                    Giá: <span class="text-danger">40.999.000 VNĐ</sub></span>
+                                </div>
+                                <a href="#">xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product">
+                            <div class="product-title">
+                                <span class="badge text-light">new</span>
+                                Samsung Galaxy Z Fold 5G
+                            </div>
+                            <div class="product-media">
+                                <img src="./img.jpg" alt="">
+                            </div>
+                            <div class="product-descript">
+                                <div class="price">
+                                    Giá: <span class="text-danger">40.999.000 VNĐ</sub></span>
+                                </div>
+                                <a href="#">xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="product">
+                            <div class="product-title">
+                                <span class="badge text-light">new</span>
+                                Samsung Galaxy Z Fold 5G
+                            </div>
+                            <div class="product-media">
+                                <img src="./img.jpg" alt="">
+                            </div>
+                            <div class="product-descript">
+                                <div class="price">
+                                    Giá: <span class="text-danger">40.999.000 VNĐ</sub></span>
+                                </div>
+                                <a href="#">xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showtime(){
+            let time = new Date();
+            let hours = time.getHours();
+            let minutes = time.getMinutes();
+            let seconds = time.getSeconds();
+            document.getElementById("timer").innerHTML = hours + ":" + minutes + ":" + seconds;
+        }
+
+        setInterval(showtime, 1000);
+        showtime()
+
+        
+    </script>
+</body>
+</html>
